@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f2f2f2;
+    }
+
+    .calculator {
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      background: lavender;
+      border: 2px solid black;
+    }
+
+    .display {
+      width: 100%;
+      height: 90px;
+      margin-bottom: 30px;
+      font-size: 24px;
+      text-align: right;
+      padding: 10px;
+      border-radius: 5px;
+      background: #f9f9f9;
+      box-sizing: border-box;
+      border: 2px solid black;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 15px;
+      border: none;
+      border-radius: 25px;
+      background: #408fe2;
+      color: white;
+      border: 2px solid black;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    button.operator {
+      background: rgb(214, 255, 30);
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="calculator">
+
+    <input type="text" class="display" placeholder="0" disabled>
+
+    <div class="buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">+</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">*</button>
+
+      <button>0</button>
+      <button>.</button>
+      <button class="operator">=</button>
+      <button class="operator">C</button>
+    </div>
+
+  </div>
+
+  <script>
+
+    // Get display and all buttons
+    const display = document.querySelector(".display");
+    const buttons = document.querySelectorAll("button");
+
+    let currentInput = "";
+
+    buttons.forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        const value = button.innerText;
+
+        // Clear button
+        if (value === "C") {
+          currentInput = "";
+          display.value = "";
+        }
+
+        // Equal button
+        else if (value === "=") {
+
+          try {
+            display.value = eval(currentInput);
+            currentInput = display.value;
+          }
+
+          catch (error) {
+            display.value = "Error";
+            currentInput = "";
+          }
+
+        }
+
+        // Other buttons
+        else {
+          currentInput += value;
+          display.value = currentInput;
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
