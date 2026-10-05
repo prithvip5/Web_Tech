@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeSuccess clone</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="mail">
+            <div class="maillogo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcpJREFUSEvt1s+LTlEcx/HXyI8lJQvJj39Amo1kY8POj9KUFAs2UtOkbPxYIMRCEQs7JVNSUn7szGJ2lIWFLGVSspAFm2kQzlfn6rh55j7zuD3P5rmrc8/9ns/7ez/ne36MGNAzMiCuIbhvztetPoIT2NByBjM4j1uVbgnehumWgXW5zXgRnSX4FC7myHMtJ3Am653E5Tr4LKqAg5hsCX4Ad4ofCs5ff1yC49tNHMPXHhNYims4WowPJxvBEf8Su/B+gfA1eIzR2rhGcNgcFsXzCfvxtEv4DtzFyhxfav0THPP724Y8BRO4kgpuCX7k+Y/i+9khgSjU02lsiC9K7W84nhK4UYzpChz6W/AIqzJsCmP4XIMvx31sz/0fsBfP83uVbKPV5TJbjQc5idB5h514lUU34knaHNbl94DtxsciuZ7AMX4xrmI8i82lBA7nduxGy3L7erb3e82RnsGVzj7cLkBV/ywO4V6H+f9vcOhuSsvkIdZnyJu07Pbg9TxV3wo49FcgbI1qj+r/0rDUWgN3uaT/hA3BfT8W4+i9VG2N1UT04yKwFc/q4HiPIywO67ULrZ6G+LdpE7rQ6erTMmt+ueG9um92D8zqXxs3ZB/GykYiAAAAAElFTkSuQmCC"/>
+            </div>
+            
+            <a>info@lesuccess.in</a>
+        </div>
+        <div class="phone">
+            <div class="phonelogo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq9JREFUSEvFlkmojmEUx39XZMiUm5XYKIVCSDdXSYhMSayMKSxsrsW9FlwSipRiIQuzUpTMhEhmK6UoQ7IwZSFDZMjw/OtcnR7P+333e7+3vmf1jud3znPO+Z+njhqtuhpxKQfuDSwAHgDXi3SyFLiXwYYBf4AlwKGi4Fng7sA1YJQDFQpPgbsBF4FxBr1rDnSy+6XA/mojT4HPADPM8HlgNjAROA0UBo/BQ4CHEfSn3U8HTjj4IuBw3shjcCNw04wpyquR4XnAMXv2AagHfueBx+BBwGMzNB844oyqtc4BY+3ZJWBKHqj+icHK4TegA7AxRLPOGb7hCk59PQF4XxRYdh4Bg62ypzrDnwG12VOgoRpoKmI92w2sAL4AfYAfBr8c8j8pvHsD9Ad+5Y02C6z2UfVqzQTO2vVCp1xzgeNFg5XntxbtKetjMboCrwEV2bPg0GjgY154lmRuAtaYUSnYLbteDWyxaxWYevulgys1R8OODQdagANZjmWB+wKvTCwEGGk51fcXXBt9DTuzE9hmgCvACAfLlNdS02mDa6e1wYnNZlBbLS0f4wBSt3dAv0SESXgpcGeTz4FmbBmwx65VB6sAOdQjgqnft5vCZWp7uYOAtk351cTSWgnsinLaHHpbKqcWuxe+nwyo56eFbT+ZNVjKgcXw7aX7reFgsB743o6KjuGaBbez+jhlTz180Ens81BsrVbBpYRE6RJIxanVBOyoBKxvZxmoi/PshVX0PtN477T6XkNFmq51HxhvaSh72IujHxByudek07+TrGqOq/XkjHpbh0SBtO4A0v1PbT+1J8eprZeoLA8wzWe/A6lvdXbTiUba/2/lBbcZ6AksDpHOsZHZMSKrLjRw/ivEasGeo0IaGnpYzmg9MW1P7ULFOU4ayfOwyIgr4tcM/BfAnnofQnzeRAAAAABJRU5ErkJggg=="/>
+            </div>
+            <p>(+91) 80120 60000</p>
+        </div>
+        <div class="facebook">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPtJREFUSEvt1j1KQ0EUxfFfELuUNpIFiGDjDhTcgG0a05gswt4dKCoB07kDO1GXkCIBNxCMjRBLEcwTiyEo70Pfm4hv2nu5/zlnLodpiHQakbj+LHgF22jiBU94xGuakz9RvI8TrC9ARtgqC9zB5TfDSwOvYoK1qsE7uF2APuAas893Pi3D6gMMgsFTtPCWBgvrRZarO1+o82DIPRIXcp0i4B7OAsoddnNRKRQglYLH2Myo6grttN6sVucBH8+T6ygG+BD9GOA93PwWOJyTKLqIsdU1uLIAqa2urU7Ljo961qxeigBJfpUbwU2eMcwkM2gqojgv48v+/wd+BzgMNh/2+3xnAAAAAElFTkSuQmCC"/>
+        </div>
+        <div class="instagram">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwhJREFUSEvllknoT1EUxz9/YxmKIvOQDFFmNmQIO0RSLMxiYWeIEjIkCrFRFmZZWBgybSgZisyJSCxkSiky7Qznq/P0uu597/1sKLd+vfrde8/3nu/5nqGOv7Tq/hIu/zxwO6A7UL+Eoa/AE+B1GZNFHrcFtgDjgZZlhoL9d8AZYHnqESlggR0x4KZu8DNwB5BHRasRMAho7Ic+AdOAs+GlGHAT4Ckgj/fZdxdwqwJoZrsBMAJY599XQA/z/ksePAasC2vc4+k1UqzjMw1Udg8CF4DR/oi1ZcAvgA7u8ZsagQUqQK25Hp67wEugYxGw6JUiH5nHvROgetQkYBjwHbgKHPd7s4ADfm+eh+oj0AxoDbzNbIZUSxiK5xWPT4i90IxsBZoHGx+AxcBeYI5Tfd8y4obrpRvQF9B/P1cILFFc8lSYEBhf6qAC2QHcBhoC/RxUXglce/l1z0HFkNiJAo8Dzjl1U3K3B/rrRdVgj1neeGd/iJgQaw9ym4pxf2dQTBYCHzVapuYur7d0Wg0sAbYnYr8C2AysMiY25s6IGT18JHA5BTwWOB/x+BQg6vVTRYotMaQHh4+WZsSC0upiClibyr3TJrKJOesnXMlS88kagSWwIaadMW47SnUGLOMCyZYKigrLMlP0tgTwSqdY3025MzddF6NcuIXAocedPLdV9gZExNXFi4XKZa+gMVQS13DPYcUxTKdFVgR2mtcq/EoZeaKmIMUqjVTjF1iF2h0wIoX3MW0M9TtRj6U+qTBVQGRYVMcKiBS/JxIGNRwVED1QOR0FVj19bnX2GdA1EUuVzMmW72JHbfKaFZFjib5bz7uS2qTCpT4QBdaE8d5ra/sqk0TicdnfUrNUrfC0yLfWWFtUjOZbDz1sY8yMEsNl21lbVF9X0/i1YsCtgMc+7mhy2ABctx79rQzF97NBQPcUDo1BPfOdSedSo89si/H+HNCfjj4yoVZ5KHx00bCn2iqlqoJJJLUssaNaoAxQt/ttVZmr2xQMBanHPAQKp5cqwLV4Wvns/wf8A/yioB/UQ80fAAAAAElFTkSuQmCC"/>
+        </div>
+        <div class="linkdin">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWxJREFUSEvt109LFlEUx/HPAy6CQAQ1ktCFLRRC2rkL8w2UL0NUqNa6EnKZBIWrdr0AQdwJCq5aRyAogoFo5qalC6m5cAeuo8QzPPPMCHpWM3c453vP75z7Z1oaslZDXLcKPILRipU4xM80ZjHjIRxTuRJ/8QQnObwIfontirPNw01jpwx4H8N40OGESoFfYQMPsZmpMdUBvG3wLzxOQLNYqwN8iX78ibAP2fO7OsCBsZXV9wueYQF9dYE74FxzbbvGwXMmkfpNfP8aVQjfJxEacBW7OMMLLGdLJyzN1EqBBzOJz6P3J8zjPZbiWCjBAS4KkB58x3gyXik4jzuB02xivxPQHD53E7yO1wir4Dl+RFgow7dugXuTHgiMRaxEWDhsjroFfhprnMf/iLfxZaAgfakaP0qcb2quMewlWYWdLdQ2WGjM0OW53YOvrMDieXz3pG5sr64N3NhlL2TYyPW2Smn/G+tW/UnUkvU/UCiAH3HBfpQAAAAASUVORK5CYII="/>
+        </div>
+        <div class="twitter">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfpJREFUSEvt1kuoT1EUx/HPjYEkz0J5RUlKDDDxyiOSMhDJQJEyUEhRBmJgQCkJkamJt4wkE4WBxESGTChJmUh5F2fVvv/uPd1z9/73v/lP7q7dGey1f9+91l57rdOjS6OnS1zD4P8W+aEI9ThcxjLMwA+cw2l8S55MSd9PvZ7VwaNxBXvwp8D9aXiK2QPYfsB1LMBYLO9rUwdvrQzv4B62F8DvY1PmgG+wMUXjcZPHB3AhLT7Hzmq+bRBeghcFUXlXRXEqtuBBE3gVWqfCT5zARXyvQQ7ifAH4c3Lg4WChHoWvGFkTjCS5i2vVyV/hI47jZAH4THXoo3W7gbJ6X8rSwTS/IObMAvAxnMqBd2NhlVyLsLZAtMQkNK/mwBvQ7y5KlDM28b6f5cBxt5HFs4YAGBJxHRPwNweO9ZXpHU8aAvhN7BhIp6lkRkU6jL0Y08EBVteeZ0uqCbwf27C4A/BLLG06dBN4Pl5jRAfersOjdsFhvxk3EI2j3XEWRwbblGuLkxFhX4MVhfQnWI9fnYCjnUWSHUqtLceOCO3KQUOkr8cTU8WKZj4vzahe8Q5zI95rlMZLOcPe9XqoI5Ojrs4tFPiNWykqrb+Lkr1NdxyeRoOPP4vpmIPx1X1Hi4v5PhWZ26k6lbD62eSSq23B0g3D4NJIdWzXtVD/A1e4TB/sCCruAAAAAElFTkSuQmCC"/>
+        </div>
+        <div class="youtube">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa9JREFUSEvt1jtoFUEUxvFfUBCCooWNpBGDdtrYiYWNEiLRMmUQUUFQBLVRfGBeRVJEbCzEImWqCKIopAi2goiKiGhlIRZ2aqGie2AX1sFw517u5qbIaZYdznx/zjdnHn16FH094loHr5rza8rqjRjBAXwrLdiO3djUwpLveI34RvzBSzzEr/rctOJ9eICdXfb8I47hTaWbgp/hYJehldwTDP0PPIBPDUEr2R34HD/1ig8X6/q0YfAhLKfgE7ifAY4e2IW9GblpyigWUvBFzGaIXcckTmIK0fG5cQr3UvDNov1vZCgEeLzM24ZbOFuMbciYex53UnBUG1W3ijq4yt2D2/WuXUHkcuVqvbkmcLUVFdcQufWIw2UOwy3mXykOoelOra6Dt5RWn8u0+kLpzD/b6RJmMiuOpjpdrnU7zTVW7Ij5tOIzuJsBXsRgh9spluJxCj6OEG0y4i54lYKjM981SUU/fqTg+H+O/Q3BH+FopZ3eTgFdwtYuwz+Ud/zblcAxvhlH8LV8DMSZHLdKO/EF74tz4SdelA+B33WBNfX0aaeyjnPXK+7YunYn9szqv6QmPx+V5GUqAAAAAElFTkSuQmCC"/>
+        </div>
+    </div>
+
+    <div class="body1">
+        <div class="logo">
+            <img id="logoimg" src="https://www.lesuccess.in/assets/images/LeSuccess.webp" alt="Logo">
+        </div>
+
+        <div class="bd1element">
+            <a class="a"><b>HOME</b></a>
+            <a class="a"><b>ABOUT US</b></a>
+            <a class="a"><b>COURSE</b></a>
+            <a class="a"><b>SERVICES</b></a>
+            <a class="a"><b>TESTIMONIALS</b></a>
+            <a class="a"><b>TEAM</b></a>
+            <a class="a"><b>GALLERY</b></a>
+            <a class="a"><b>CONTACT US</b></a>
+        </div>
+
+        <button class="bd1button">Students Portal</button>
+            
+    </div>
+
+    <div class="body2">
+        <div class="bd2content1">
+            <p class="heading">
+                <b>Learn Educate Succeed</b>
+            </p>
+            <img id="bdmg" src="https://www.lesuccess.in/assets/images/banner/02.png" alt="underline" class="underline">
+        
+            <p id="heading1">Bridging the Gap Between Academia and the Corporate world!</p>
+
+            <div class="bd2content2">
+                <h2 class="heading2">LeSuccess - Course Registration !</h2>
+            </div>
+
+            <div class="bd2button">
+                <button class="learn">Learn more</button>
+                <button class="register">Register</button>
+            </div>
+
+        </div>
+
+        <div class="bd2img">
+            <img src="https://www.lesuccess.in/assets/images/banner/01.png" alt="image">
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+    <div class="blueimg">
+        <div class="blueimgcont">
+            <div class="blueimgbox">
+                <div class="blueimgbox-img">
+                    <img src="https://www.lesuccess.in/assets/images/fun-facts/02.svg" alt="blue" style="height: 42px;">
+                </div>
+                <div class="blueimgbox-text">
+                    <span class="enr">Courses Offered   </span>
+                </div>
+            </div>
+            <hr>
+            <div class="blueimgbox">
+                <div class="blueimgbox-img">
+                    <img src="https://www.lesuccess.in/assets/images/fun-facts/01.svg" alt="blue">
+                </div>
+                <div class="blueimgbox-text">
+                    <span class="enr">Top Mentors   </span>
+                </div>
+            </div>
+            <hr>
+            <div class="blueimgbox">
+                <div class="blueimgbox-img">
+                    <img src="https://www.lesuccess.in/assets/images/fun-facts/03.svg" alt="blue">
+                </div>
+                <div class="blueimgbox-text">
+                    <span class="enr">Top-Notch Services</span>
+                </div>
+            </div>
+            <hr>
+            <div class="blueimgbox">
+                <div class="blueimgbox-img">
+                    <img src="https://www.lesuccess.in/assets/images/fun-facts/04.svg" alt="blue">
+                </div>
+                <div class="blueimgbox-text">
+                    <span class="enr">100+ Testimonials</span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="body3">
+        <p class="bd3cnt1"><b>OUR WINGS</b></p>
+        <p class="bd3cnt2"><b>For Both Corporate and Institution</b></p>
+    </div>
+    <div class="grid">
+        <div class="conts">
+            <div class="img">
+                <img src="https://www.lesuccess.in/assets/images/wings/training.webp" alt="img">
+            </div>
+            <div class="text">
+                <h6>Communication Training</h6>
+            </div>
+        </div>
+        <div class="conts">
+            <div class="img">
+                <img src="https://www.lesuccess.in/assets/images/wings/SkillDevelopmentPrograms.webp" alt="img">
+            </div>
+            <div class="text">
+                <h6>Skill Development Programs</h6>
+            </div>
+        </div>
+        <div class="conts">
+            <div class="img">
+                <img src="https://www.lesuccess.in/assets/images/wings/CareerCounseling.webp" alt="img">
+            </div>
+            <div class="text">
+                <h6>Career Counseling</h6>
+            </div>
+        </div>
+        <div class="conts">
+            <div class="img">
+                <img src="https://www.lesuccess.in/assets/images/wings/CorporateTransition.webp" alt="img">
+            </div>
+            <div class="text">
+                <h6>Corporate Transition</h6>
+            </div>
+        </div>
+        <div class="conts">
+            <div class="img">
+                <img src="https://www.lesuccess.in/assets/images/wings/CampusPlacements.webp" alt="img">
+            </div>
+            <div class="text">
+                <h6>Campus Placements</h6>
+            </div>
+        </div>
+        <div class="conts">
+            <div class="img">
+                <img src="https://www.lesuccess.in/assets/images/wings/CompanySpecificTraining.webp" alt="img">
+            </div>
+            <div class="text">
+                <h6>Company-Specific Training</h6>
+            </div>
+        </div>
+        <div class="conts">
+            <div class="img">
+                <img src="https://www.lesuccess.in/assets/images/wings/PlacementOpportunities.webp" alt="img">
+            </div>
+            <div class="text">
+                <h6>Placement Opportunities</h6>
+            </div>
+        </div>
+        <div class="conts">
+            <div class="img">
+                <img src="https://www.lesuccess.in/assets/images/wings/QualityRecruitment.webp" alt="img">
+            </div>
+            <div class="text">
+                <h6>Quality Recruitment</h6>
+            </div>
+        </div>
+        <div class="conts">
+            <div class="img">
+                <img src="https://www.lesuccess.in/assets/images/wings/CommunityEngagement.webp" alt="img">
+            </div>
+            <div class="text">
+                <h6>Community Engagement</h6>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="box">
+        <div class="box1">
+              <img src="https://www.lesuccess.in/assets/images/leimage.webp" alt=""> 
+        </div> 
+        <div class="box2">
+            <div class="bx2hd1">
+                <p style="color: #CF2C2B;"><b>ABOUT US</b></p>
+            </div>
+            <br>
+            <div class="bx2hd2">
+                <h2>Learn & Grow Your Skils From Anywhere</h2>
+            </div>
+            <br>
+            <div style="width: 500px;">
+                <p style="font-size: 17px;margin-bottom:15px">LeSuccess's approach emphasizes practical hands-on learning experiences that engage students and enhance their understanding of complex concepts.</p>
+            </div>
+            
+
+            <div class="grid-v1">
+                <div class="conts-v1">
+                    <div class="img-v1">
+                        <img src="https://www.lesuccess.in/assets/images/coach.webp" alt="img">
+                    </div>
+                    <div class="text-v1">
+                        <h6>Expert  Trainers</h6>
+                    </div>
+                </div>
+                <div class="conts-v1">
+                    <div class="img-v1">
+                        <img src="https://www.lesuccess.in/assets/images/online-learning.webp" alt="img">
+                    </div>
+                    <div class="text-v1">
+                        <h6>Online/Offline Learning</h6>
+                    </div>
+                </div>
+                <div class="conts-v1">
+                    <div class="img-v1">
+                        <img src="https://www.lesuccess.in/assets/images/accessible.webp" alt="img">
+                    </div>
+                    <div class="text-v1">
+                        <h6>Lifetime Access</h6>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    
+    <div class="blueimg-v1">
+        <div class="blueimgcont-v1">
+            <div class="blueimgbox-v1">
+                <div class="blueimgbox-img-v1">
+                    <img src="https://www.lesuccess.in/assets/images/fun-facts/01.svg" alt="blue">
+                </div>
+                <div class="blueimgbox-count-v1">
+                    <span class="cnr">37K</span>
+                </div>
+                <div class="blueimgbox-text-v1">
+                    <span class="enr-v1">Students Enrolled</span>
+                </div>
+            </div>
+            <hr>
+            <div class="blueimgbox-v1">
+                <div class="blueimgbox-img-v1">
+                    <img src="https://www.lesuccess.in/assets/images/fun-facts/02.svg" alt="blue" style="height: 42px;">
+                </div>
+                <div class="blueimgbox-count-v1">
+                    <span class="cnr">0.7K</span>
+                </div>
+                <div class="blueimgbox-text-v1">
+                    <span class="enr-v1">Class Completed</span>
+                </div>
+            </div>
+            <hr>
+            <div class="blueimgbox-v1">
+                <div class="blueimgbox-img">
+                    <img src="https://www.lesuccess.in/assets/images/fun-facts/03.svg" alt="blue">
+                </div>
+                <div class="blueimgbox-count-v1">
+                    <span class="cnr">16+</span>
+                </div>
+                <div class="blueimgbox-text-v1">
+                    <span class="enr-v1">Top Instructors</span>
+                </div>
+            </div>
+            <hr>
+            <div class="blueimgbox-v1">
+                <div class="blueimgbox-img-v1">
+                    <img src="https://www.lesuccess.in/assets/images/fun-facts/04.svg" alt="blue">
+                </div>
+                <div class="blueimgbox-count-v1">
+                    <span class="cnr">100%</span>
+                </div>
+                <div class="blueimgbox-text-1">
+                    <span class="enr-v1">Satisfaction Rate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="brand-area">
+        <div class="inside">
+            <div class="cntnt">
+                <h2 class="pre-title"> Our Valuable Partners</h2>
+                <p class="post-title">
+                    By working closely with our academic partners, we are able to design and implement effective training modules that meet the demands of today's competitive job market. Our academic partners bring a wealth of knowledge and expertise that enriches our training programs and ensures that our students are well-prepared for their future careers.
+                </p>
+            </div>
+        </div>
+        <div class="college-logo">
+            <div class="img-box">
+                <img src="https://www.lesuccess.in/assets/images/partners/PSR.webp" alt="PSR" id="cllg">
+                <p>P.S.R College of Engineering</p>
+            </div>
+            <div class="img-box">
+                <img src="https://www.lesuccess.in/assets/images/partners/PKR.webp" alt="PKR" id="cllg">
+                <p>P.K.R Arts College for Women</p>
+            </div>
+            <div class="img-box">
+                <img src="https://www.lesuccess.in/assets/images/partners/Panimalar.webp" alt="Panimalar" id="cllg">
+                <p>Panimalar Engineering College</p>
+            </div>
+            <div class="img-box">
+                <img src="https://www.lesuccess.in/assets/images/partners/vit.webp" alt="vit" id="cllg">
+                <p>Vellore Institue of Technology</p>
+            </div>
+            <div class="img-box">
+                <img src="https://www.lesuccess.in/assets/images/partners/UIT.webp" alt="PSR" id="cllg">
+                <p>United Institue of Technology</p>
+            </div>
+            <div class="img-box">
+                <img src="https://www.lesuccess.in/assets/images/partners/RIT.webp" alt="PKR" id="cllg">
+                <p>Ramco Institue of Technology</p>
+            </div>
+            <div class="img-box">
+                <img src="https://www.lesuccess.in/assets/images/partners/KPR.webp" alt="Panimalar" id="cllg">
+                <p>KPR Institue of Engineering and <br>Technology</p>
+            </div>
+            <div class="img-box">
+                <img src="https://www.lesuccess.in/assets/images/partners/PSNA.webp" alt="vit" id="cllg">
+                <p>PSNA College of Engineering and <br>Technology</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="fotr">
+            <div class="box-1">
+                <img src="https://www.lesuccess.in/assets/images/cta/03.svg" alt="svg">
+                <img src="https://www.lesuccess.in/assets/images/cta/women.png" alt="women"  id="wmen">
+                <div class="banner">
+                    <h2 id="skills">Skills Certificate From <br>the LeSuccess</h2>
+                    <img src="https://www.lesuccess.in/assets/images/cta/04.svg" alt="book" height="53px" width="35px">
+                    <a href="https://www.lesuccess.in/courses.php" id="course">View All Courses <img src="https://www.reshot.com/preview-assets/icons/UCA8NGYZDJ/right-arrow-UCA8NGYZDJ.svg" alt="arr" height="16px" id="arr">
+                    </a>
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="f1">
+                    <img src="https://www.lesuccess.in/assets/images/LeSuccess.webp" alt="lesuccess" height="44px" width="299px" id="lesuccess-logo">
+                    <p id="p1">The success story of LeSuccess is a testament to the power of young minds coming together with a shared vision.</p>
+                </div>
+                <div class="f2">
+                    <h6 id="title">Quick Links</h6>
+                    <ul class="menu">
+                        <li>About Us</li>
+                        <li>Services</li>
+                        <li>Testimonials</li>
+                        <li>Team</li>
+                        <li>Gallery</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="f3">
+                    <h6 id="title">Explore</h6>
+                    <ul class="menu">
+                        <li>Privacy Policy</li>
+                        <li>Sitemap</li>
+                        
+                    </ul>
+                </div>
+                <div class="f3">
+                    <h6 id="title">Contacts</h6>
+                    <ul class="menu">
+                        <li id="details">
+                            LeSuccess Technical Learning Centre<br>
+                            4th Floor,Tristar Tower,Avinashi road<br>
+                            Lakshmi Mills- 641 037<br>
+                            Coimbatore,TamilNadu
+                        </li>
+                        <li>+(91) 80120 60000</li>
+                        <li>info@lesuccess.in</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <label class="copyright">2024 © Copyright LeSuccess | All Rights Reserved</label>
+            
+            <div class="logofoot">
+                <div class="facebook">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPtJREFUSEvt1j1KQ0EUxfFfELuUNpIFiGDjDhTcgG0a05gswt4dKCoB07kDO1GXkCIBNxCMjRBLEcwTiyEo70Pfm4hv2nu5/zlnLodpiHQakbj+LHgF22jiBU94xGuakz9RvI8TrC9ARtgqC9zB5TfDSwOvYoK1qsE7uF2APuAas893Pi3D6gMMgsFTtPCWBgvrRZarO1+o82DIPRIXcp0i4B7OAsoddnNRKRQglYLH2Myo6grttN6sVucBH8+T6ygG+BD9GOA93PwWOJyTKLqIsdU1uLIAqa2urU7Ljo961qxeigBJfpUbwU2eMcwkM2gqojgv48v+/wd+BzgMNh/2+3xnAAAAAElFTkSuQmCC"/>
+                </div>
+                <div class="instagram">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwhJREFUSEvllknoT1EUxz9/YxmKIvOQDFFmNmQIO0RSLMxiYWeIEjIkCrFRFmZZWBgybSgZisyJSCxkSiky7Qznq/P0uu597/1sKLd+vfrde8/3nu/5nqGOv7Tq/hIu/zxwO6A7UL+Eoa/AE+B1GZNFHrcFtgDjgZZlhoL9d8AZYHnqESlggR0x4KZu8DNwB5BHRasRMAho7Ic+AdOAs+GlGHAT4Ckgj/fZdxdwqwJoZrsBMAJY599XQA/z/ksePAasC2vc4+k1UqzjMw1Udg8CF4DR/oi1ZcAvgA7u8ZsagQUqQK25Hp67wEugYxGw6JUiH5nHvROgetQkYBjwHbgKHPd7s4ADfm+eh+oj0AxoDbzNbIZUSxiK5xWPT4i90IxsBZoHGx+AxcBeYI5Tfd8y4obrpRvQF9B/P1cILFFc8lSYEBhf6qAC2QHcBhoC/RxUXglce/l1z0HFkNiJAo8Dzjl1U3K3B/rrRdVgj1neeGd/iJgQaw9ym4pxf2dQTBYCHzVapuYur7d0Wg0sAbYnYr8C2AysMiY25s6IGT18JHA5BTwWOB/x+BQg6vVTRYotMaQHh4+WZsSC0upiClibyr3TJrKJOesnXMlS88kagSWwIaadMW47SnUGLOMCyZYKigrLMlP0tgTwSqdY3025MzddF6NcuIXAocedPLdV9gZExNXFi4XKZa+gMVQS13DPYcUxTKdFVgR2mtcq/EoZeaKmIMUqjVTjF1iF2h0wIoX3MW0M9TtRj6U+qTBVQGRYVMcKiBS/JxIGNRwVED1QOR0FVj19bnX2GdA1EUuVzMmW72JHbfKaFZFjib5bz7uS2qTCpT4QBdaE8d5ra/sqk0TicdnfUrNUrfC0yLfWWFtUjOZbDz1sY8yMEsNl21lbVF9X0/i1YsCtgMc+7mhy2ABctx79rQzF97NBQPcUDo1BPfOdSedSo89si/H+HNCfjj4yoVZ5KHx00bCn2iqlqoJJJLUssaNaoAxQt/ttVZmr2xQMBanHPAQKp5cqwLV4Wvns/wf8A/yioB/UQ80fAAAAAElFTkSuQmCC"/>
+                </div>
+                <div class="linkdin">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWxJREFUSEvt109LFlEUx/HPAy6CQAQ1ktCFLRRC2rkL8w2UL0NUqNa6EnKZBIWrdr0AQdwJCq5aRyAogoFo5qalC6m5cAeuo8QzPPPMCHpWM3c453vP75z7Z1oaslZDXLcKPILRipU4xM80ZjHjIRxTuRJ/8QQnObwIfontirPNw01jpwx4H8N40OGESoFfYQMPsZmpMdUBvG3wLzxOQLNYqwN8iX78ibAP2fO7OsCBsZXV9wueYQF9dYE74FxzbbvGwXMmkfpNfP8aVQjfJxEacBW7OMMLLGdLJyzN1EqBBzOJz6P3J8zjPZbiWCjBAS4KkB58x3gyXik4jzuB02xivxPQHD53E7yO1wir4Dl+RFgow7dugXuTHgiMRaxEWDhsjroFfhprnMf/iLfxZaAgfakaP0qcb2quMewlWYWdLdQ2WGjM0OW53YOvrMDieXz3pG5sr64N3NhlL2TYyPW2Smn/G+tW/UnUkvU/UCiAH3HBfpQAAAAASUVORK5CYII="/>
+                </div>
+                <div class="twitter">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfpJREFUSEvt1kuoT1EUx/HPjYEkz0J5RUlKDDDxyiOSMhDJQJEyUEhRBmJgQCkJkamJt4wkE4WBxESGTChJmUh5F2fVvv/uPd1z9/73v/lP7q7dGey1f9+91l57rdOjS6OnS1zD4P8W+aEI9ThcxjLMwA+cw2l8S55MSd9PvZ7VwaNxBXvwp8D9aXiK2QPYfsB1LMBYLO9rUwdvrQzv4B62F8DvY1PmgG+wMUXjcZPHB3AhLT7Hzmq+bRBeghcFUXlXRXEqtuBBE3gVWqfCT5zARXyvQQ7ifAH4c3Lg4WChHoWvGFkTjCS5i2vVyV/hI47jZAH4THXoo3W7gbJ6X8rSwTS/IObMAvAxnMqBd2NhlVyLsLZAtMQkNK/mwBvQ7y5KlDM28b6f5cBxt5HFs4YAGBJxHRPwNweO9ZXpHU8aAvhN7BhIp6lkRkU6jL0Y08EBVteeZ0uqCbwf27C4A/BLLG06dBN4Pl5jRAfersOjdsFhvxk3EI2j3XEWRwbblGuLkxFhX4MVhfQnWI9fnYCjnUWSHUqtLceOCO3KQUOkr8cTU8WKZj4vzahe8Q5zI95rlMZLOcPe9XqoI5Ojrs4tFPiNWykqrb+Lkr1NdxyeRoOPP4vpmIPx1X1Hi4v5PhWZ26k6lbD62eSSq23B0g3D4NJIdWzXtVD/A1e4TB/sCCruAAAAAElFTkSuQmCC"/>
+                </div>
+                <div class="youtube">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa9JREFUSEvt1jtoFUEUxvFfUBCCooWNpBGDdtrYiYWNEiLRMmUQUUFQBLVRfGBeRVJEbCzEImWqCKIopAi2goiKiGhlIRZ2aqGie2AX1sFw517u5qbIaZYdznx/zjdnHn16FH094loHr5rza8rqjRjBAXwrLdiO3djUwpLveI34RvzBSzzEr/rctOJ9eICdXfb8I47hTaWbgp/hYJehldwTDP0PPIBPDUEr2R34HD/1ig8X6/q0YfAhLKfgE7ifAY4e2IW9GblpyigWUvBFzGaIXcckTmIK0fG5cQr3UvDNov1vZCgEeLzM24ZbOFuMbciYex53UnBUG1W3ijq4yt2D2/WuXUHkcuVqvbkmcLUVFdcQufWIw2UOwy3mXykOoelOra6Dt5RWn8u0+kLpzD/b6RJmMiuOpjpdrnU7zTVW7Ij5tOIzuJsBXsRgh9spluJxCj6OEG0y4i54lYKjM981SUU/fqTg+H+O/Q3BH+FopZ3eTgFdwtYuwz+Ud/zblcAxvhlH8LV8DMSZHLdKO/EF74tz4SdelA+B33WBNfX0aaeyjnPXK+7YunYn9szqv6QmPx+V5GUqAAAAAElFTkSuQmCC"/>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+
+</body>
+</html>
+
