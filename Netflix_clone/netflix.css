@@ -1,0 +1,81 @@
+*{
+    background-color: black;
+    /* background-image: url("netflix_background.jpg"); */
+}
+.logo{
+    height: 105px;
+    width: 185px;
+    margin-left: 30px;
+}
+.lang{
+    color: white;
+    height: 35px;
+    width:120px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.signin{
+    color: white;
+    background-color: rgb(229, 9, 20);
+    height: 35px;
+    width:80px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-left: 13px;
+}
+.header{
+    display: flex;
+}
+.element{
+    margin-left: 980px;
+    margin-top: 25px;
+}
+.body1{
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+}
+.a{
+    font-size: 65px;
+    margin-bottom: 0px;
+}
+.b{
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.c{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.s{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.started{
+    margin-top: 10px;
+}
+.eadd{
+    width: 300px;
+    height: 45px;
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.gtstart{
+    width: 160px;
+    height: 48px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 800px;
+}
